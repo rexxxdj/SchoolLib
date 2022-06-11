@@ -21,7 +21,7 @@ from . import settings
 from . import views
 
 urlpatterns = [
-    path(r'^admin/', admin.site.urls),
+    path(r'admin/', admin.site.urls),
     path(r'', views.index, name='index'),
     path(r'student/', include('students.urls', namespace='student')),
 ]
