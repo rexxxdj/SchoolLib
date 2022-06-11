@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+
+def student_index(request):
+    return redirect('/student/1/dashboard')
 
 def student_dashboard(request, sid):
     return HttpResponse('<h1> Student DashBoard  %s</h1> ' %sid)
