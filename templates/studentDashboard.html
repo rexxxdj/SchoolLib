@@ -67,7 +67,7 @@
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
-                                <div class="text-uppercase text-warning fw-bold text-xs mb-1"><span>не виконаних дз</span></div>
+                                <div class="text-uppercase text-warning fw-bold text-xs mb-1"><span>Не виконаних дз</span></div>
                                 <div class="text-dark fw-bold h5 mb-0"><span>18</span></div>
                             </div>
                             <div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div>
@@ -101,24 +101,40 @@
                 <div class="card shadow mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h6 class="text-primary fw-bold m-0">Успішність</h6>
-                        <div class="dropdown no-arrow">
-                            <button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">
-                                <i class="fas fa-ellipsis-v text-gray-400"></i>
-                            </button>
-                            <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
-                                <p class="text-center dropdown-header">dropdown header:</p>
-                                <a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
-                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
+                    </div>
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="performanceTab">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="performance-all-tab" data-bs-toggle="tab" data-bs-target="#performance-all-tab-pane" type="button" role="tab" aria-controls="performance-all-tab-pane" aria-selected="false">Загалом</button>
+                            </li>
+                            <!--<li class="nav-item" role="presentation">
+                                <button class="nav-link" id="performance-lesson-tab" data-bs-toggle="tab" data-bs-target="#performance-lesson-tab-pane" type="button" role="tab" aria-controls="performance-lesson-tab-pane" aria-selected="false">По дисциплінах</button>
+                            </li>-->
+                        </ul>
+                        <p></p>
+                        <div class="tab-content" id="performanceTabContent">
+                            <div class="tab-pane fade show active" id="performance-all-tab-pane" role="tabpanel"  aria-labelledby="performance-all-tab" tabindex="0">
+                                <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}}}"></canvas></div>
+                                <div class="text-center small mt-4">
+                                    <span class="me-2"><i class="fas fa-circle text-primary"></i>&nbsp;8</span>
+                                    <span class="me-2"><i class="fas fa-circle text-success"></i>&nbsp;7</span>
+                                    <span class="me-2"><i class="fas fa-circle text-info"></i>&nbsp;6</span>
+                                </div>
+                            </div>
+                            <!--<div class="tab-pane fade" id="performance-lesson-tab-pane" role="tabpanel"  aria-labelledby="performance-lesson-tab" tabindex="0">
+                                <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}}}"></canvas></div>
+                                <div class="text-center small mt-4">
+                                    <span class="me-2"><i class="fas fa-circle text-primary"></i>12</span>
+                                    <span class="me-2"><i class="fas fa-circle text-success"></i>11</span>
+                                    <span class="me-2"><i class="fas fa-circle text-info"></i>10</span>
+                                </div>
+                            </div>
+                            -->
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
-                        <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}}}"></canvas></div>
-                        <div class="text-center small mt-4">
-                            <span class="me-2"><i class="fas fa-circle text-primary"></i>&nbsp;12</span>
-                            <span class="me-2"><i class="fas fa-circle text-success"></i>&nbsp;11</span>
-                            <span class="me-2"><i class="fas fa-circle text-info"></i>&nbsp;10</span>
-                        </div>
+
                     </div>
                 </div>
             </div>
