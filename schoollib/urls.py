@@ -25,6 +25,7 @@ urlpatterns = [
     path(r'', views.index, name='index'),
     path(r'login/', views.login, name='login'),
     path(r'register/', views.register, name='register'),
+    path(r'settings/', views.settings, name='settings'),
     path(r'student/', include('students.urls', namespace='student')),
 ]
 

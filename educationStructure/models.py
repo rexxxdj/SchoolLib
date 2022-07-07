@@ -1,13 +1,21 @@
 from django.db import models
+from django.urls import reverse
+
 
 class Country(models.Model):
     class Meta(object):
         verbose_name = u"Країна"
         verbose_name_plural = u"Країни"
+        ordering = ['name']
 
     name = models.CharField(
         max_length=50,
+        db_index=True,
         verbose_name=u"Назва країни")
+
+    def __str__(self):
+        return self.name
+
 
 class City(models.Model):
     class Meta(object):
@@ -16,13 +24,17 @@ class City(models.Model):
 
     name = models.CharField(
         max_length=50,
+        db_index=True,
         verbose_name=u"Назва")
-    countryId = models.ForeignKey(
+    country = models.ForeignKey(
         Country,
-        blank=True,
-        null=True,
-        on_delete=models.SET_NULL,
+        db_index=True,
+        on_delete=models.PROTECT,
         verbose_name=u"Країна")
+
+    def __str__(self):
+        return self.name
+
 
 class Institution(models.Model):
     class Meta(object):
@@ -31,19 +43,21 @@ class Institution(models.Model):
 
     name = models.CharField(
         max_length=1024,
+        db_index=True,
         verbose_name=u"Назва")
-    countryId = models.ForeignKey(
+    country = models.ForeignKey(
         Country,
-        blank=True,
-        null=True,
-        on_delete=models.SET_NULL,
+        db_index=True,
+        on_delete=models.PROTECT,
         verbose_name=u"Країна")
-    cityId = models.ForeignKey(
+    city = models.ForeignKey(
         City,
-        blank=True,
-        null=True,
-        on_delete=models.SET_NULL,
+        db_index=True,
+        on_delete=models.PROTECT,
         verbose_name=u"Місто")
     notes = models.TextField(
         blank=True,
         verbose_name=u"Додаткові нотатки")
+
+    def __str__(self):
+        return self.name

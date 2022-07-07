@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block meta_title %}Profile{% endblock meta_title %}
+{% block class_active %}active{% endblock class_active %}
+
+{% block content %}
+<div class="container-fluid">
+    <h3 class="text-dark mb-1">Налаштування</h3>
+</div><!-- Start: Features Image -->
+<div class="container py-4 py-xl-5">
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col"><img class="rounded w-100 h-100 fit-cover" style="min-height: 300px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
+        <div class="col d-flex flex-column justify-content-center p-4">
+            <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                <div>
+                    <h4>Країни</h4>
+                    <p></p><a href="#"></a>
+                </div>
+            </div>
+            <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                <div>
+                    <h4>Міста</h4>
+                </div>
+            </div>
+            <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start">
+                <div>
+                    <h4>Навчальні заклади</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- End: Features Image -->
+{% endblock content %}

@@ -81,7 +81,10 @@
                 <div class="card shadow mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h6 class="text-primary fw-bold m-0">Середній бал</h6>
-                        <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                        <div class="dropdown no-arrow">
+                            <button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">
+                                <i class="fas fa-ellipsis-v text-gray-400"></i>
+                            </button>
                             <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
                                 <p class="text-center dropdown-header">dropdown header:</p>
                                 <a class="dropdown-item" href="#">&nbsp;Action</a>
@@ -93,7 +96,7 @@
                     </div>
                     <div class="card-body">
                         <div class="chart-area">
-                            <canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}]}}}"></canvas></div>
+                            <canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Січ&quot;,&quot;Лют&quot;,&quot;Бер&quot;,&quot;Кві&quot;,&quot;Тра&quot;,&quot;Чер&quot;,&quot;Лип&quot;,&quot;Сер&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;9&quot;,&quot;8&quot;,&quot;10&quot;,&quot;9&quot;,&quot;9.2&quot;,&quot;9&quot;,&quot;10&quot;,&quot;11&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}]}}}"></canvas></div>
                     </div>
                 </div>
             </div>
@@ -114,11 +117,11 @@
                         <p></p>
                         <div class="tab-content" id="performanceTabContent">
                             <div class="tab-pane fade show active" id="performance-all-tab-pane" role="tabpanel"  aria-labelledby="performance-all-tab" tabindex="0">
-                                <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}}}"></canvas></div>
+                                <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;11&quot;,&quot;10&quot;,&quot;9&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}}}"></canvas></div>
                                 <div class="text-center small mt-4">
-                                    <span class="me-2"><i class="fas fa-circle text-primary"></i>&nbsp;8</span>
-                                    <span class="me-2"><i class="fas fa-circle text-success"></i>&nbsp;7</span>
-                                    <span class="me-2"><i class="fas fa-circle text-info"></i>&nbsp;6</span>
+                                    <span class="me-2"><i class="fas fa-circle text-primary"></i>&nbsp;11</span>
+                                    <span class="me-2"><i class="fas fa-circle text-success"></i>&nbsp;10</span>
+                                    <span class="me-2"><i class="fas fa-circle text-info"></i>&nbsp;9</span>
                                 </div>
                             </div>
                             <!--<div class="tab-pane fade" id="performance-lesson-tab-pane" role="tabpanel"  aria-labelledby="performance-lesson-tab" tabindex="0">
@@ -130,240 +133,242 @@
                                 </div>
                             </div>
                             -->
-                            </div>
                         </div>
                     </div>
-                    <div class="card-body">
+                </div>
+                <div class="card-body">
 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="text-primary fw-bold m-0">Прогрес виконання домашніх завдань</h6>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="small fw-bold">Не виконано<span class="float-end">20%</span></h4>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                                <span class="visually-hidden">20%</span>
+                            </div>
+                        </div>
+                        <h4 class="small fw-bold">Виконано частково<span class="float-end">40%</span></h4>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                <span class="visually-hidden">40%</span></div>
+                        </div>
+                        <h4 class="small fw-bold">Виконано<span class="float-end">60%</span></h4>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                <span class="visually-hidden">60%</span></div>
+                        </div>
+                        <h4 class="small fw-bold">Всього задано<span class="float-end">Complete!</span></h4>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                <span class="visually-hidden">100%</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="text-primary fw-bold m-0">Прогрес виконання домашніх завдань</h6>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="small fw-bold">Не виконано<span class="float-end">20%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                                    <span class="visually-hidden">20%</span>
-                                </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="lessonTab">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="monday-tab" data-bs-toggle="tab" data-bs-target="#monday-tab-pane" type="button" role="tab" aria-controls="monday-tab-pane" aria-selected="false">Понеділок</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tuesday-tab" data-bs-toggle="tab" data-bs-target="#tuesday-tab-pane" type="button" role="tab" aria-controls="tuesday-tab-pane" aria-selected="false">Вівторок</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="wednesday-tab" data-bs-toggle="tab" data-bs-target="#wednesday-tab-pane" type="button" role="tab" aria-controls="wednesday-tab-pane" aria-selected="false">Середа</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="thursday-tab" data-bs-toggle="tab" data-bs-target="#thursday-tab-pane" type="button" role="tab" aria-controls="thursday-tab-pane" aria-selected="false">Четвер</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="friday-tab" data-bs-toggle="tab" data-bs-target="#friday-tab-pane" type="button" role="tab" aria-controls="friday-tab-pane" aria-selected="false">П'ятниця</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="saturday-tab" data-bs-toggle="tab" data-bs-target="#saturday-tab-pane" type="button" role="tab" aria-controls="saturday-tab-pane" aria-selected="false">Субота</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="sunday-tab" data-bs-toggle="tab" data-bs-target="#sunday-tab-pane" type="button" role="tab" aria-controls="sunday-tab-pane" aria-selected="false">Неділя</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="lessonTabContent">
+                            <div class="tab-pane fade show active" id="monday-tab-pane" role="tabpanel"  aria-labelledby="monday-tab" tabindex="0">
+                                <h4 class="card-title"></h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Англійська мова</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Українська мова</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Українська література</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Математика</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="card-text"></p>
                             </div>
-                            <h4 class="small fw-bold">Виконано частково<span class="float-end">40%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-                                    <span class="visually-hidden">40%</span></div>
+                            <div class="tab-pane fade" id="tuesday-tab-pane" role="tabpanel"  aria-labelledby="tuesday-tab" tabindex="0">
+                                <h4 class="card-title"></h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Англійська мова</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Українська мова</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Українська література</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="card-text"></p>
                             </div>
-                            <h4 class="small fw-bold">Виконано<span class="float-end">60%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                    <span class="visually-hidden">60%</span></div>
+                            <div class="tab-pane fade" id="wednesday-tab-pane" role="tabpanel"  aria-labelledby="wednesday-tab" tabindex="0">
+                                <h4 class="card-title"></h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Англійська мова</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Українська мова</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Математика</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="card-text"></p>
                             </div>
-                            <h4 class="small fw-bold">Всього задано<span class="float-end">Complete!</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                                    <span class="visually-hidden">100%</span></div>
+                            <div class="tab-pane fade" id="thursday-tab-pane" role="tabpanel"  aria-labelledby="thursday-tab" tabindex="0">
+                                <h4 class="card-title"></h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Англійська мова</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Українська література</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Математика</h1><span>08:00 - 08:45</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="card-text"></p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">
-                            <ul class="nav nav-tabs card-header-tabs" id="lessonTab">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="monday-tab" data-bs-toggle="tab" data-bs-target="#monday-tab-pane" type="button" role="tab" aria-controls="monday-tab-pane" aria-selected="false">Понеділок</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="tuesday-tab" data-bs-toggle="tab" data-bs-target="#tuesday-tab-pane" type="button" role="tab" aria-controls="tuesday-tab-pane" aria-selected="false">Вівторок</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="wednesday-tab" data-bs-toggle="tab" data-bs-target="#wednesday-tab-pane" type="button" role="tab" aria-controls="wednesday-tab-pane" aria-selected="false">Середа</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="thursday-tab" data-bs-toggle="tab" data-bs-target="#thursday-tab-pane" type="button" role="tab" aria-controls="thursday-tab-pane" aria-selected="false">Четвер</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="friday-tab" data-bs-toggle="tab" data-bs-target="#friday-tab-pane" type="button" role="tab" aria-controls="friday-tab-pane" aria-selected="false">П'ятниця</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="saturday-tab" data-bs-toggle="tab" data-bs-target="#saturday-tab-pane" type="button" role="tab" aria-controls="saturday-tab-pane" aria-selected="false">Субота</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="sunday-tab" data-bs-toggle="tab" data-bs-target="#sunday-tab-pane" type="button" role="tab" aria-controls="sunday-tab-pane" aria-selected="false">Неділя</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="lessonTabContent">
-                                <div class="tab-pane fade show active" id="monday-tab-pane" role="tabpanel"  aria-labelledby="monday-tab" tabindex="0">
-                                    <h4 class="card-title"></h4>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Англійська мова</h1><span>08:00 - 08:45</span>
-                                                </div>
+                            <div class="tab-pane fade" id="friday-tab-pane" role="tabpanel"  aria-labelledby="friday-tab" tabindex="0">
+                                <h4 class="card-title"></h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Англійська мова</h1><span>08:00 - 08:45</span>
                                             </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Українська мова</h1><span>08:00 - 08:45</span>
-                                                </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Українська мова</h1><span>08:00 - 08:45</span>
                                             </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Українська література</h1><span>08:00 - 08:45</span>
-                                                </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Українська література</h1><span>08:00 - 08:45</span>
                                             </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Математика</h1><span>08:00 - 08:45</span>
-                                                </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Математика</h1><span>08:00 - 08:45</span>
                                             </div>
-                                        </li>
-                                    </ul>
-                                    <p class="card-text"></p>
-                                </div>
-                                <div class="tab-pane fade" id="tuesday-tab-pane" role="tabpanel"  aria-labelledby="tuesday-tab" tabindex="0">
-                                    <h4 class="card-title"></h4>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Англійська мова</h1><span>08:00 - 08:45</span>
-                                                </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="tab-pane fade" id="saturday-tab-pane" role="tabpanel"  aria-labelledby="saturday-tab" tabindex="0">
+                                <h4 class="card-title"></h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1>Математика</h1><span>08:00 - 08:45</span>
                                             </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Українська мова</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Українська література</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <p class="card-text"></p>
-                                </div>
-                                <div class="tab-pane fade" id="wednesday-tab-pane" role="tabpanel"  aria-labelledby="wednesday-tab" tabindex="0">
-                                    <h4 class="card-title"></h4>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Англійська мова</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Українська мова</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Математика</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <p class="card-text"></p>
-                                </div>
-                                <div class="tab-pane fade" id="thursday-tab-pane" role="tabpanel"  aria-labelledby="thursday-tab" tabindex="0">
-                                    <h4 class="card-title"></h4>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Англійська мова</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Українська література</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Математика</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <p class="card-text"></p>
-                                </div>
-                                <div class="tab-pane fade" id="friday-tab-pane" role="tabpanel"  aria-labelledby="friday-tab" tabindex="0">
-                                    <h4 class="card-title"></h4>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Англійська мова</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Українська мова</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Українська література</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Математика</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <p class="card-text"></p>
-                                </div>
-                                <div class="tab-pane fade" id="saturday-tab-pane" role="tabpanel"  aria-labelledby="saturday-tab" tabindex="0">
-                                    <h4 class="card-title"></h4>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h1>Математика</h1><span>08:00 - 08:45</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <p class="card-text"></p>
-                                </div>
-                                <div class="tab-pane fade" id="sunday-tab-pane" role="tabpanel"  aria-labelledby="sunday-tab" tabindex="0">
-                                    <h4 class="card-title">Вихідний</h4>
-                                    <p class="card-text"></p>
-                                </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="tab-pane fade" id="sunday-tab-pane" role="tabpanel"  aria-labelledby="sunday-tab" tabindex="0">
+                                <h4 class="card-title">Вихідний</h4>
+                                <p class="card-text"></p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 {% endblock content %}

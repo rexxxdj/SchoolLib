@@ -22,8 +22,9 @@
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link {% block dashboard_active%}{% endblock dashboard_active %}" href="/student/1/dashboard"><i class="fas fa-tachometer-alt"></i><span>Дашборд</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/student/1/profile"><i class="fas fa-user"></i><span>Профіль</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/student/1/class"><i class="fas fa-table"></i><span>Мій клас</span></a></li>
+                    <li class="nav-item"><a class="nav-link {% block profile_active%}{% endblock profile_active %}" href="/student/1/profile"><i class="fas fa-user"></i><span>Профіль</span></a></li>
+                    <li class="nav-item"><a class="nav-link {% block class_active%}{% endblock class_active %}" href="/student/1/class"><i class="fas fa-table"></i><span>Мій клас</span></a></li>
+                    <li class="nav-item"><a class="nav-link {% block settings_active%}{% endblock settings_active %}" href="/settings"><i class="fas fa-cog"></i><span>Налаштування</span></a></li>
                     <!--<li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Login</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>-->
                 </ul>
@@ -48,7 +49,11 @@
                                 </div>
                             </li>-->
                             <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                <div class="nav-item dropdown no-arrow">
+                                    <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
+                                        <span class="badge bg-danger badge-counter">3+</span>
+                                        <i class="fas fa-bell fa-fw"></i>
+                                    </a>
                                     <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
                                         <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
                                             <div class="me-3">
